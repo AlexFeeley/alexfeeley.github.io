@@ -1,0 +1,65 @@
+body {
+    background-color: #0a192f;
+}
+h1 {
+    color:  #d9d9e8;
+    font-family: verdana;
+    font-size: 100%;
+    text-align: center;
+}
+h2{
+    color: lightseagreen;
+    font-family: verdana;
+    font-size: 250%;
+    text-align: center;
+}
+h3{
+    color: #d9d9e8;
+    font-family: verdana;
+    text-align: center;
+}
+h4{
+    color: #d9d9e8;
+    font-family: verdana;
+    text-align: center;
+}
+h5{
+    color: #d9d9e8;
+    font-family: verdana;
+    text-align: center;
+}
+h6{
+    color: #d9d9e8;
+    font-family: verdana;
+    text-align: center;
+}
+p {
+    color: #def2f1;
+    font-family: verdana;
+    text-align: center;
+}
+ul {
+    position: fixed; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+li {
+    float: left;
+    padding: 4px;
+}
+li a {
+    border: 0.5px solid #333;
+    border-radius: 8px;
+    background-color: #333;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+.courses{
+    column-count: 2;
+    column-gap: 10%;
+}
