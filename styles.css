@@ -13,53 +13,177 @@ h2{
     font-size: 250%;
     text-align: center;
 }
-h3{
+h3, h4, h5, h6, p{
     color: #d9d9e8;
-    font-family: verdana;
-    text-align: center;
-}
-h4{
-    color: #d9d9e8;
-    font-family: verdana;
-    text-align: center;
-}
-h5{
-    color: #d9d9e8;
-    font-family: verdana;
-    text-align: center;
-}
-h6{
-    color: #d9d9e8;
-    font-family: verdana;
-    text-align: center;
-}
-p {
-    color: #def2f1;
     font-family: verdana;
     text-align: center;
 }
 ul {
-    position: fixed; 
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: verdana;
+    font-size: 75%;
+    background-color: #0a192f;
+    width: 100%;
+    z-index: 1000;
   }
 li {
-    float: left;
+    float: right;
     padding: 4px;
+    z-index: 1000;
 }
 li a {
-    border: 0.5px solid #333;
+    border: 0.5px solid lightseagreen;
     border-radius: 8px;
-    background-color: #333;
+    background-color: lightseagreen;
     display: block;
-    color: white;
+    color: #d9d9e8;
     text-align: center;
     padding: 5px 5px;
     text-decoration: none;
+    z-index: 1000;
 }
-.courses{
+li a:hover {
+    color: #0a192f;
+    z-index: 1000;
+}
+li a:active{
+    color: #0a192f;
+    z-index: 1000;
+}
+#course{
     column-count: 2;
     column-gap: 10%;
 }
+#wrapper {
+    overflow: hidden;
+    text-align: center;
+}
+#pastcourses, #currentcourses{
+    display: inline-block;
+    margin: 2%;
+}
+#first, #second, #third{
+    font-size: 100px;
+    display: inline-block;
+    margin: 2%;
+}
+#one, #two{
+    display: inline-block;
+    margin: 2%;
+}
+#one{
+    width: 200px; 
+    height: 300px; 
+    border-radius: 100%;
+    margin-right: 18%;
+    float: right;
+}
+#two{
+    word-wrap:break-word;
+    width:50%;
+    text-align: left;
+    margin-left: 5%;
+}
+div p a:hover{
+    color: white;
+}
+div p a{
+    text-decoration: none;
+    color: lightskyblue;
+}
+
+.background {
+    position: relative; 
+    width:100%;
+    margin: 0 auto;
+}
+  
+.background .content {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
+div h3, div p{
+    word-wrap:break-word;
+    width:50%;
+}
+.dogpic{
+    width: 120px; 
+    height: 175px; 
+    border-radius: 10%;
+    margin-left: 5%;
+}
+hr{
+    width: 90%;
+}
+#icon{
+    color:#d9d9e8;
+    text-decoration: none;
+}
+#icon:hover{
+    color:lightseagreen;
+}
+#alex{
+    text-align: left; 
+    color: white; 
+    background-color: lightseagreen; 
+    display: inline-block;
+
+    border-radius: 8px;
+    padding: 5px 5px;
+}
+/* .flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+    flex-direction: column;
+} */
+/* .flex-container > div{
+    background-color: lightseagreen;
+    width: 200px;
+    margin: 5%;
+    text-align: center;
+
+    line-height: 18px;
+    font-size: 16px;
+}
+div.flex-container{
+    text-align: center;
+} */
+table{
+    font-family: Verdana;
+    border-collapse: collapse;
+    width: 20%;
+    margin-left: 10%;
+}
+td, th{
+    background-color: lightseagreen;
+    color: white;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta charset="utf-8">
-<<<<<<< HEAD
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="Alex Feeley, a rising Sophomore at Vanderbilt University
         seeking a technical internship for the Summer of 2020">
@@ -10,44 +9,227 @@
         <meta name="keywords" content="Alex Feeley, Alex, Feeley, alex feeley, electrical engineer, 
         ee, computer science, vanderbilt" data-react-helmet="true">
         <meta name="author" content="Alex Feeley">
+
         <link rel="icon" type="image/png" href="/bitmoji.jpeg" sizes="16x16">
         <link rel="stylesheet" href="styles.css">
+
+        <!-- These icons were taken from the open source project, Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
         <title>Alex Feeley</title>
     </head>
     
     <body>
-        <ul style="font-family: verdana; font-size: 75%">
-            <li><a href="/">Home</a></li>
-            <li><a href="Personal/About/index.html">About</a></li>
-            <li><a href="Personal/Education/index.html">Education</a></li>
-            <li><a href="Personal/Projects/index.html">Projects</a></li>
-            <li><a href="Personal/Contact/index.html">Contact Me</a></li>
+        <!-- Navigation Bar -->
+        <ul>
+                <h3 id="alex">Alex Feeley</h3>
+                <li style="display: inline-block"><a href="#contact">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#about">About</a></li>
         </ul>
 
-        <div class="background" background-image: url(circuit.jpg) repeat;>
+        <!-- Home Page -->
+        <!-- <br id="home"></br> -->
+        <div id="home" class="background">
+            <img src="circuit.jpg" alt="IC" style="width:100%; opacity:0.4;">
+            <div class="content">
+                <h1>Hi, my name is</h1>
+                <h2>Alex Feeley.</h2>
+                <p style="word-wrap: none; width: 100%;">I'm a Sophomore at Vanderbilt University majoring in <strong>Electrical Engineering</strong>
+                    with a passion for creating cool stuff.</p>
+            </div>
         </div>
-        <!-- <img src="circuit.jpg"> -->
-        <br></br>
-        <br></br>
-        <h1 style="text-align: center;">Hi, my name is</h1>
-        <h2 style="text-align: center;">Alex Feeley.</h2>
-        <p style="text-align: center;">I'm a Sophomore at Vanderbilt University majoring in <strong>Electrical Engineering</strong>
-        with a passion for creating cool stuff.</p>
-=======
-        <title>
-            Alex Feeley
-        </title>
-    </head>
-    <body>
-        <a href="/">Home</a>
-        <a href="Personal/About/index.html">About</a>
-        <a href="Personal/ContactMe/index.html">Contact Me</a>
 
-        <h1>Alex Feeley's Personal Website</h1>
+        <!-- About Page -->
+        <p id="about"></p>
+        <br></br>
+
+        <h2>About</h2>
+        <hr></hr>
+
+        <div>
+            <img id="one" src="IMG_0396.jpg" alt="Picture of me">
+            <p id="two">My name is <span style="color: lightseagreen">Alex</span> and I'm interested in creating things. As an Electrical Engineer,
+                one of my favorite things to do is to work on one of my current <a class="highlight" href="#projects"> projects</a> 
+                or to experiment with new kinds of technology. In my free time, I explore the restaurants of Nashville, 
+                teach children's swim lessons, and foster dogs through Nashville Humane's 
+                <a class="highlight" href="http://nashvillehumane.org/doggie-dates/" target="_blank"> Rovernight program. </a>
+                Look at Monkey (left) and Buddy (right)!
+            </p>
+        </div>
+
+        <div style="margin-left: 15%;">
+            <img src="IMG_7552.jpg" alt="Picture of Monkey" class="dogpic">    
+            <img src="IMG_1223.png" alt="Picture of Buddy" class="dogpic">
+        </div>
+
+        <h3 style="word-wrap: none">Skills</h3>
+        <h4>Languages</h4>
+        <p>Java, C++, Python, HTML, Verilog HDL, VHDL, CSS</p>
+        <h4>Software</h4>
+        <p>Mathematica, Altera Quartus, LTSpice, Arduino, CAD</p>
+        <h4>Certifications</h4>
+        <p>Lifeguard, First Aid, CPR, AED, Water Safety Istructor</p>
+
+
+        <!-- Education Page -->
+        <p id="education"></p>
+        <br></br>
+    
+        <h2>Education</h2>
+        <hr></hr>
+    
+        <div style="text-align: left;">
+                <h3>Vanderbilt University</h3>
+                <p>Expected Bachelors of Electrical Engineering in 2021</p>
+                <p>Expected Masters of Electrical Engineering in 2022</p>
+                <p><strong>Majors:</strong> Electrical Engineering, Math</p>
+                <p><strong>Minor:</strong> Computer Science</p>
+            
+                <!-- <br></br> -->
+                <h4>Relevant Coursework:</h4>
+                <!-- <div class="flex-container">
+                    <div>Electronics I</div>
+                    <div>Circuits 2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+                <div class="flex-container">
+                        <div><p>Digital Logic</p>
+                        <p>EECE 2116</p></div>
+                        <div><p>Circuits I</p>
+                        <p>EECE 2112</p></div>
+                        <div><p>Intro Computer Science</p>
+                        <p>CS 1101</p></div>
+                        <div><p>Linear Algebra</p>
+                        <p>MATH 2600</p></div>
+                        <div><p>Multivariable Calculus</p>
+                        <p>MATH 2300</p></div>
+                </div> -->
+                <div class="row">
+
+                        <table id="currentcourses">
+                                <tr>
+                                    <th>Current Courses</th>
+                                </tr>
+                                <tr>
+                                    <td>Electronics I</td>
+                                </tr>
+                                <tr>
+                                    <td>Circuits II</td>
+                                </tr>
+                                <tr>
+                                    <td>Discrete Structures</td>
+                                </tr>
+                                <tr>
+                                    <td>Data Structures</td>
+                                </tr>
+                                <tr>
+                                    <td>Differential Equations</td>
+                                </tr>
+                            </table>
+                            <p></p>
+                            <table id="past courses">
+                                    <tr>
+                                        <th>Past Courses</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Digital Logic</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Circuits I</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Intro to Computer Science</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Linear Algebra</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Multivariable Calculus</td>
+                                    </tr>
+                                </table>
+
+                </div>
+        </div>
+
+
+        <!-- Experience Page -->
+        <p id="experience"></p>
+        <br></br>
+
+        <h2>Experience</h2>
         <hr>
-        <p>This is my personal website to showcase all the things I do. </p>
-        <p>Thanks for stopping by</p>
->>>>>>> b699f1921280da2b45329ae63433fc96c42855c3
+
+        <h3>Current Research</h3>
+        <p>I did this this and this</p>
+        <p></p>
+        <h3>WMP</h3>
+        <p>blah blah blah</p>
+
+        <!-- Projects Page -->
+        <p id="projects"></p>
+        <br></br>
+
+        <h2>Projects</h2>
+        <hr></hr>
+
+        <h3>Vitamin A Sensor</h3>
+        <p>I am currently an Undergraduate Researcher at Vanderbilt University where
+            I am developing a noninvasive way to measure vitamin A using a wearable 
+            sensor.</p>
+
+        <h3>Bangle</h3>    
+        <p>I am in the process of making a bangle that will generate enough energy to
+            charge a cell phone through the power of walking. </p>
+
+        <h3>Arduino Walkie-Talkie</h3>
+        <p>I made this for an engineering module</p>
+
+
+        <!-- Contact Page -->
+        <p id="contact"></p>
+        <br></br>
+
+        <h2 class="title">Contact Me</h2>
+        <hr></hr>
+    
+        <div id="wrapper">
+            <div id="first">
+                <a id="link" href="https://github.com/AlexFeeley" target="_blank">
+                    <i id="icon" class="fab fa-github-square" target="_blank"></i>
+                </a>
+            </div>
+            <div id="second">
+                <a id="link" href="https://www.linkedin.com/in/alex-feeley/" target="_blank">
+                    <i class="fab fa-linkedin" id="icon"></i>
+                </a>
+            </div>
+            <div id="third">
+                <a id="link" href="mailto:alexandra.feeley.lamb@vanderbilt.edu" rel="noopener">
+                    <i class="fas fa-envelope-square" id="icon"></i>
+                </a>
+            </div>
+        </div>
+    
+        <p>Get in touch with me by pressing an icon to connect with me</p>
+        <p> on <a id="icon" href="https://github.com/AlexFeeley" target="_blank">LinkedIn,
+        </a> view my <a id="icon" href="https://www.linkedin.com/in/alex-feeley/" target="_blank">Github,</a>
+        or shoot me an <a id="icon" href="mailto:alexandra.feeley.lamb@vanderbilt.edu" rel="noopener">Email.</a></p>
+
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+
+        <hr></hr>
+        <p>Designed and built by <a id="icon" href="#about">Alex Feeley</a></p>
     </body>
 </html>
