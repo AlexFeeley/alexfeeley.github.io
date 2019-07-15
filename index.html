@@ -17,13 +17,17 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
         <title>Alex Feeley</title>
+
+
+    <style>
+    </style>
     </head>
     
     <body>
         <!-- Navigation Bar -->
         <ul>
                 <h3 id="alex">Alex Feeley</h3>
-                <li style="display: inline-block"><a href="#contact">Contact</a></li>
+                <li style="display: inline-block; margin-right: 2.5%"><a href="#contact">Connect</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#education">Education</a></li>
@@ -31,26 +35,19 @@
         </ul>
 
         <!-- Home Page -->
-        <div id="home" class="background">
-            <img src="circuit.jpg" alt="IC" style="width:100%; opacity:0.4;">
-            <div class="content">
+        <div class="background">
+            <img src="circuit.jpg" alt="IC" style="width:100%; opacity:0.4">
+            <div id="content">
                 <h1>Hi, my name is</h1>
                 <h2>Alex Feeley.</h2>
-                <p style="word-wrap: none; width: 100%;">I'm a Sophomore at Vanderbilt University majoring in <strong>Electrical Engineering</strong>
+                <p style="word-wrap: none; width: 100%">I'm a Sophomore at Vanderbilt University majoring in <strong>Electrical Engineering</strong>
                     with a passion for creating cool stuff.</p>
-
                 <br></br>
-
-                 <div class="col">
-                    <div class="container-2">
-                        <div class="btn btn-two">
-                            <a href="#about" style="color: white; font-family:verdana; text-decoration: none; z-index: 696969">Want to learn more?</a>
-                        </div>
-                    </div>
+                <div style="text-align: center">
+                    <button class="homebutton">
+                        <a href="#about" style="color:white; text-decoration: none">Learn more about me</a>
+                    </button>
                 </div>
-
-                
-
             </div>
         </div>
 
@@ -60,17 +57,6 @@
 
         <h2>About</h2>
         <hr></hr>
-
-        <!-- <div>
-            <img id="one" src="IMG_0396.jpg" alt="Picture of me">
-            <p id="two">My name is <span style="color: lightseagreen">Alex</span> and I'm interested in creating things. As an Electrical Engineer,
-                one of my favorite things to do is to work on one of my current <a class="highlight" href="#projects"> projects</a> 
-                or to experiment with new kinds of technology. In my free time, I explore the restaurants of Nashville, 
-                teach children's swim lessons, and foster dogs through Nashville Humane's 
-                <a class="highlight" href="http://nashvillehumane.org/doggie-dates/" target="_blank"> Rovernight program. </a>
-                Look at Monkey (left) and Buddy (right)!
-            </p>
-        </div> -->
 
         <div class="row">
             <div class="column">
@@ -88,14 +74,12 @@
             </div>
         </div>
 
-        <h3 style="word-wrap: none">Skills</h3>
-        <h4>Languages</h4>
-        <p>Java, C++, Python, HTML, Verilog HDL, VHDL, CSS</p>
-        <h4>Software</h4>
-        <p>Mathematica, Altera Quartus, LTSpice, Arduino, CAD</p>
-        <h4>Certifications</h4>
-        <p>Lifeguard, First Aid, CPR, AED, Water Safety Istructor</p>
+        <p></p>
 
+        <h1>Here's a few of the skills I've acquired along the way:</h1>
+        <p><i class="fas fa-globe"></i> Languages: Java, C++, Python, HTML, CSS, Verilog HDL, VHDL</p>
+        <p><i class="fas fa-laptop-code"></i> Software: Quartus, Mathematica, Git, LTSpice, Arduino, AutoCAD</p>
+        <p><i class="fas fa-swimmer"></i> Certifications: Lifeguard, First Aid, CPR, AED, Water Safety Instructor</p>
 
         <!-- Education Page -->
         <p id="education"></p>
@@ -104,80 +88,31 @@
         <h2>Education</h2>
         <hr></hr>
     
-        <div style="text-align: left;">
-                <h3>Vanderbilt University</h3>
-                <p>Expected Bachelors of Electrical Engineering in 2021</p>
-                <p>Expected Masters of Electrical Engineering in 2022</p>
-                <p><strong>Majors:</strong> Electrical Engineering, Math</p>
-                <p><strong>Minor:</strong> Computer Science</p>
-            
-                <!-- <br></br> -->
-                <h4>Relevant Coursework:</h4>
-                <!-- <div class="flex-container">
-                    <div>Electronics I</div>
-                    <div>Circuits 2</div>
-                    <div>3</div>
-                    <div>4</div>
-                </div>
-                <div class="flex-container">
-                        <div><p>Digital Logic</p>
-                        <p>EECE 2116</p></div>
-                        <div><p>Circuits I</p>
-                        <p>EECE 2112</p></div>
-                        <div><p>Intro Computer Science</p>
-                        <p>CS 1101</p></div>
-                        <div><p>Linear Algebra</p>
-                        <p>MATH 2600</p></div>
-                        <div><p>Multivariable Calculus</p>
-                        <p>MATH 2300</p></div>
-                </div> -->
-                <div class="row">
+        <h3>Vanderbilt University</h3>
+        <p>Expected Bachelors of Electrical Engineering in 2021</p>
+        <p>Expected Masters of Electrical Engineering in 2022</p>
+        <p><strong>Majors:</strong> Electrical Engineering, Math</p>
+        <p><strong>Minor:</strong> Computer Science</p>
 
-                        <table id="currentcourses">
-                                <tr>
-                                    <th>Current Courses</th>
-                                </tr>
-                                <tr>
-                                    <td>Electronics I</td>
-                                </tr>
-                                <tr>
-                                    <td>Circuits II</td>
-                                </tr>
-                                <tr>
-                                    <td>Discrete Structures</td>
-                                </tr>
-                                <tr>
-                                    <td>Data Structures</td>
-                                </tr>
-                                <tr>
-                                    <td>Differential Equations</td>
-                                </tr>
-                            </table>
-                            <p></p>
-                            <table id="past courses">
-                                    <tr>
-                                        <th>Past Courses</th>
-                                    </tr>
-                                    <tr>
-                                        <td>Digital Logic</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Circuits I</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Intro to Computer Science</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Linear Algebra</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Multivariable Calculus</td>
-                                    </tr>
-                            </table>
-
-                </div>
+        <button class="collapsible"><button class="collapsible" id="tooltip"><a href="javascript://" class="hoverable">
+            <span class="normal">Relevant Courses</span><span class="hover">Click to expand</span>
+          </a></button></button>
+        <div class="content">
+            <p><strong>Current Courses: </strong>Electronics I, Circuits II, Data Structures, Discrete Structures, Differential Equations</p>
+            <p><strong>Past Courses: </strong>Circuits I, Digital Logic, Linear Algebra, Multivariable Calculus</p>
         </div>
-
+        <button class="collapsible"><a href="javascript://" class="hoverable">
+            <span class="normal">Activities</span><span class="hover">Click to expand</span>
+          </a></button>
+        <div class="content">
+                <p><strong>Theta Tau Professional Engineering Fraternity</strong></p>
+                <p>Participated in professional development, community service, and other events to strengthen fraternal brotherhood</p>
+                <p><strong>SyBBURE Searle Undegraduate Research Program</strong></p>
+                <p>Developed a group project each year to innovatively solve 
+                a current problem, engaged in weekly training modules and progress meetings, and earned a stipend to conduct year-round research</p>
+                <p><strong>Code Ignite</strong></p>
+                <p>Traveled to a local Nashville Middle School each week to teach eager students Scratch and Python during afterschool </p>
+        </div>
 
         <!-- Experience Page -->
         <p id="experience"></p>
@@ -186,11 +121,62 @@
         <h2>Experience</h2>
         <hr>
 
-        <h3>Current Research</h3>
-        <p>I did this this and this</p>
-        <p></p>
-        <h3>WMP</h3>
-        <p>blah blah blah</p>
+        <h3>Vanderbilt Institute for Integrative Biosystems Research and Education</h3>
+        <button class="collapsible"><a href="javascript://" class="hoverable">
+            <span class="normal" style="color:white; font-size: 18px; line-height: 0.7">Undergraduate Researcher, May 2019—Present
+            </span><span class="hover" style="color:white">Click to expand</span>
+          </a></button>
+        <div class="content">
+            <p>Researched vitamin A and its various forms in order to find an appropiate LED wavelength<br>
+                Independently developed a circuit using an LED and a photodiode to transdermally measure the concentration of vitamin A</p>
+            <p></p>
+        </div>
+
+        <h3>Westfield Memorial Pool</h3>
+        <button class="collapsible"><a href="javascript://" class="hoverable">
+            <span class="normal" style="color:white; font-size: 18px; line-height: 0.7">Assistant Manager, May 2018—August 2018
+            </span><span class="hover" style="color:white">Click to expand</span>
+          </a></button>
+        <div class="content">
+            <p>Supervised a staff of over 60 lifeguards to maintain a safe swimming environment for thousands of daily patrons<br>
+                Organized financial operations through an online computer system</p>
+        </div>
+        <button class="collapsible"><a href="javascript://" class="hoverable">
+            <span class="normal" style="color:white; font-size: 18px; line-height: 0.7">Swim Instructor, June 2016—August 2018
+            </span><span class="hover" style="color:white">Click to expand</span>
+          </a></button>
+        <div class="content">
+            <p>Organized and distributed swim lessons to 15 other instructors<br>
+                Taught group and swim lessons to ages two and up<br>
+                Created appropiate drills and games to develop swimming skills</p>
+        </div>
+        <button class="collapsible"><a href="javascript://" class="hoverable">
+            <span class="normal" style="color:white; font-size: 18px; line-height: 0.7">Lifeguard, July 2015—August 2018
+            </span><span class="hover" style="color:white">Click to expand</span>
+          </a></button>
+        <div class="content">
+            <p>Maintained a constant surveillence of patrons in the facility<br>
+                Administered First Aid and CPR in response to emergency situations<br>
+                Performed daily maitenence around the pool complex and its restrooms to maintain a safe and clean facility</p>
+        
+        </div>
+        <!-- Collapsible Sections -->
+        <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+                                                            
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                            content.style.display = "none";
+                        } else {
+                            content.style.display = "block";
+                        }
+                    });
+                }
+            </script>
 
         <!-- Projects Page -->
         <p id="projects"></p>
@@ -216,7 +202,7 @@
         <p id="contact"></p>
         <br></br>
 
-        <h2 class="title">Contact Me</h2>
+        <h2 class="title">Connect with Me</h2>
         <hr></hr>
     
         <div id="wrapper">
@@ -242,16 +228,7 @@
         </a> view my <a id="icon" href="https://www.linkedin.com/in/alex-feeley/" target="_blank">Github,</a>
         or shoot me an <a id="icon" href="mailto:alexandra.feeley.lamb@vanderbilt.edu" rel="noopener">Email.</a></p>
 
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-
+        <!-- Footer -->
         <hr></hr>
         <p>Designed and built by <a id="icon" href="#about">Alex Feeley</a></p>
     </body>

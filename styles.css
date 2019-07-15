@@ -5,7 +5,6 @@ html {
 body {
     background-color: #0a192f;
 }
-
 html,body {
     display: flex;
     flex-direction: column;
@@ -27,6 +26,19 @@ h3, h4, h5, h6, p{
     color: #d9d9e8;
     font-family: verdana;
     text-align: center;
+}
+
+/* Table */
+td, th{
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+td{
+    width: 25%;
+    word-wrap:break-word;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* Navigation Bar */
@@ -64,9 +76,115 @@ li a:hover {
     color: #0a192f;
     z-index: 1000;
 }
-li a:active{
-    color: #0a192f;
-    z-index: 1000;
+#alex{
+    text-align: left; 
+    color: #d9d9e8; 
+    background-color: lightseagreen; 
+    display: inline-block;
+
+    border-radius: 8px;
+    padding: 5px 5px;
+    margin-top: 3px;
+    margin-left: 2.5%;
+}
+
+/* Creating Two Columns in the About Section */
+.column {
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: auto;
+    word-wrap:break-word;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Home Button*/
+button{
+    background-color: lightseagreen;
+    font-size: 16px;
+    font-family: verdana;
+    text-decoration: none;
+}
+.homebutton{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10%;
+    border: 0px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.homebutton a {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.homebutton a:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.homebutton:hover a {
+    padding-right: 25px;
+}
+.homebutton:hover a:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* Collapsible Sections */
+.collapsible {
+    background-color: #0a192f;
+    color: lightskyblue;
+    cursor: pointer;
+    padding: 18px;
+    width: 90%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 18px;
+    margin-left:auto;
+    margin-right:auto;
+}
+  
+.active, .collapsible:hover {
+    background-color: #0a192f;
+    width: 90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+  
+.content {
+    display: none;
+    overflow: hidden;
+    background-color: #0a192f;
+    width: 90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Hover to Change Text */
+.hoverable {
+    cursor:default;
+    color:lightskyblue;
+    text-decoration:none;
+}
+.hoverable .hover {
+    display:none;
+}
+.hoverable:hover .normal {
+    display:none;
+}
+.hoverable:hover .hover {
+    display:inline;
 }
 
 
@@ -96,15 +214,12 @@ li a:active{
     width: 200px; 
     height: 300px; 
     border-radius: 10%;
-    /* margin-right: auto; */
     margin-left: 50%;
     margin-top: 0;
-    /* float: right; */
 }
 #two{
     word-wrap:break-word;
     width:90%;
-    /* text-align: left; */
     margin-left: 5%;
 }
 div p a:hover{
@@ -119,16 +234,12 @@ div p a{
     width:95%;
     margin: 0 auto;
 }
-.background .content {
+.background #content {
     position: absolute;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-div h3, div p{
-    word-wrap:break-word;
-    width:50%;
 }
 .dogpic{
     width: 100px; 
@@ -145,120 +256,4 @@ hr{
 }
 #icon:hover{
     color:lightseagreen;
-}
-#alex{
-    text-align: left; 
-    color: white; 
-    background-color: lightseagreen; 
-    display: inline-block;
-
-    border-radius: 8px;
-    padding: 5px 5px;
-}
-/* table{
-    font-family: Verdana;
-    border-collapse: collapse;
-    width: 20%;
-    margin-left: 10%;
-} */
-td, th{
-    background-color: lightseagreen;
-    color: white;
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 8px;
-}
-
-/* Creating a Learn More Button for the Front Page */
-
-.col {
-  height: 100%;
-}
-
-div[class*=container] {
-  text-align: center;
-  width: 100%;
-  height: 33%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.btn {
-  position: relative;
-  color: white;
-  width: 256px;
-  height: 64px;
-  line-height: 64px;
-  transition: all 0.3s;
-  span {
-    transition: all 0.3s;
-    tranform: scale(1, 1);
-  }
-}
-
-.btn::before, .btn::after {
-  content: '';
-  position: absolute;
-  transition: all 0.3s;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-.btn-two::before, .btn-two::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-    height: 100%;
-  bottom: 0;
-    left: 0;
-    z-index: 1;
-  transition: all 0.3s;
-  border: 1px solid lightseagreen;
-}
-
-.btn-two:hover::after {
-  animation-name: rotatecw;
-  animation-duration: 2s;
-}
-.btn-two:hover::before {
-  animation-name: rotateccw; 
-  animation-duration: 3s;
-}
-.btn-two:hover::after, .btn-two:hover::before {
-  left: 96px;
-  width: 60px;
-  
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes rotatecw {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
-}
-
-@keyframes rotateccw {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(-360deg);}
-}
-
-/* Creating Two Columns in the About Section */
-/* * {
-    box-sizing: border-box;
-  } */
-.column {
-    float: left;
-    width: 40%;
-    padding: 10px;
-    margin-left: 5%;
-    margin-right: auto;
-}
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
 }
