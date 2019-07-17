@@ -5,10 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="Alex Feeley, a rising Sophomore at Vanderbilt University
         seeking a technical internship for the Summer of 2020">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
         <meta name="keywords" content="Alex Feeley, Alex, Feeley, alex feeley, electrical engineer, 
         ee, computer science, vanderbilt" data-react-helmet="true">
         <meta name="author" content="Alex Feeley">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
         <link rel="icon" type="image/png" href="/bitmoji.jpeg" sizes="16x16">
         <link rel="stylesheet" href="styles.css">
@@ -25,7 +31,7 @@
     
     <body>
         <!-- Navigation Bar -->
-        <ul>
+        <ul class="navbar">
                 <h3 id="alex">Alex Feeley</h3>
                 <li style="display: inline-block; margin-right: 2.5%"><a href="#contact">Connect</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -60,6 +66,9 @@
 
         <div class="row">
             <div class="column">
+                    <p><img id="one" src="IMG_0396.jpg" alt="Alex Feeley Picture"></p>
+            </div>
+            <div class="column">
                 <p id="two">My name is <span style="color: lightseagreen">Alex</span> and I'm interested in creating things. As an Electrical Engineer,
                     one of my favorite things to do is to work on one of my current <a class="highlight" href="#projects"> projects</a> 
                     or to experiment with new kinds of technology. In my free time, I explore the restaurants of Nashville, 
@@ -68,9 +77,6 @@
                 <p id="two">Look at Monkey (left) and Buddy (right)!</p>
                 <img src="IMG_7552.jpg" alt="Monkey" class="dogpic">    
                 <img src="IMG_1223.png" alt="Buddy" class="dogpic">
-            </div>
-            <div class="column">
-                <p><img id="one" src="IMG_0396.jpg" alt="Alex Feeley Picture"></p>
             </div>
         </div>
 
@@ -123,43 +129,51 @@
 
         <h3>Vanderbilt Institute for Integrative Biosystems Research and Education</h3>
         <button class="collapsible"><a href="javascript://" class="hoverable">
-            <span class="normal" style="color:white; font-size: 18px; line-height: 0.7">Undergraduate Researcher, May 2019—Present
+            <span class="normal" style="color:white; font-size: 95%; line-height: 0.7">Undergraduate Researcher, May 2019—Present
             </span><span class="hover" style="color:white">Click to expand</span>
           </a></button>
         <div class="content">
-            <p>Researched vitamin A and its various forms in order to find an appropiate LED wavelength<br>
-                Independently developed a circuit using an LED and a photodiode to transdermally measure the concentration of vitamin A</p>
-            <p></p>
+            <ul>
+                <li class="exp">Researched vitamin A and its various forms in order to find an appropiate LED wavelength</li>
+                <li class="exp">Independently developed a circuit using an LED and a photodiode to transdermally measure the concentration of vitamin A</li>
+            </ul>
         </div>
 
         <h3>Westfield Memorial Pool</h3>
         <button class="collapsible"><a href="javascript://" class="hoverable">
-            <span class="normal" style="color:white; font-size: 18px; line-height: 0.7">Assistant Manager, May 2018—August 2018
+            <span class="normal" style="color:white; font-size: 95%; line-height: 0.7">Assistant Manager, May 2018—August 2018
             </span><span class="hover" style="color:white">Click to expand</span>
           </a></button>
         <div class="content">
-            <p>Supervised a staff of over 60 lifeguards to maintain a safe swimming environment for thousands of daily patrons<br>
-                Organized financial operations through an online computer system</p>
+            <ul>
+                <li class="exp">Supervised a staff of over 60 lifeguards to maintain a safe swimming environment for thousands of daily patrons</li>
+                <li class="exp">Coordinated training drills to maintain necessary life-saving skills</li>
+                <li class="exp">Organized financial operations through an online computer system</li>
+            </ul>
         </div>
         <button class="collapsible"><a href="javascript://" class="hoverable">
-            <span class="normal" style="color:white; font-size: 18px; line-height: 0.7">Swim Instructor, June 2016—August 2018
+            <span class="normal" style="color:white; font-size: 95%; line-height: 0.7">Swim Instructor, June 2016—August 2018
             </span><span class="hover" style="color:white">Click to expand</span>
           </a></button>
         <div class="content">
-            <p>Organized and distributed swim lessons to 15 other instructors<br>
-                Taught group and swim lessons to ages two and up<br>
-                Created appropiate drills and games to develop swimming skills</p>
+            <ul>
+                <li class="exp">Organized and distributed swim lessons to 15 other instructors</li>
+                <li class="exp">Taught group and private swim lessons to ages two and up</li>
+                <li class="exp">Created appropiate drills and games to develop swimming skills</li>
+            </ul>
         </div>
         <button class="collapsible"><a href="javascript://" class="hoverable">
-            <span class="normal" style="color:white; font-size: 18px; line-height: 0.7">Lifeguard, July 2015—August 2018
+            <span class="normal" style="color:white; font-size: 95%; line-height: 0.7">Lifeguard, July 2015—August 2018
             </span><span class="hover" style="color:white">Click to expand</span>
           </a></button>
         <div class="content">
-            <p>Maintained a constant surveillence of patrons in the facility<br>
-                Administered First Aid and CPR in response to emergency situations<br>
-                Performed daily maitenence around the pool complex and its restrooms to maintain a safe and clean facility</p>
-        
+            <ul>
+                <li class="exp">Maintained a constant surveillence of patrons in the facility</li>
+                <li class="exp">Administered First Aid and CPR in response to emergency situations</li>
+                <li class="exp">Performed daily maitenence around the pool complex and its restrooms to maintain a safe and clean facility</li>
+            </ul>
         </div>
+
         <!-- Collapsible Sections -->
         <script>
                 var coll = document.getElementsByClassName("collapsible");
@@ -176,7 +190,7 @@
                         }
                     });
                 }
-            </script>
+        </script>
 
         <!-- Projects Page -->
         <p id="projects"></p>
@@ -185,17 +199,19 @@
         <h2>Projects</h2>
         <hr></hr>
 
-        <h3>Vitamin A Sensor</h3>
-        <p>I am currently an Undergraduate Researcher at Vanderbilt University where
-            I am developing a noninvasive way to measure vitamin A using a wearable 
-            sensor.</p>
-
-        <h3>Bangle</h3>    
-        <p>I am in the process of making a bangle that will generate enough energy to
-            charge a cell phone through the power of walking. </p>
-
-        <h3>Arduino Walkie-Talkie</h3>
-        <p>I made this for an engineering module</p>
+        <div class="proj">
+            <h3>Vitamin A Sensor</h3>
+            <p>I am currently an Undergraduate Researcher at Vanderbilt University where
+                I am developing a noninvasive way to measure vitamin A using a wearable 
+                sensor.</p>
+        
+            <h3>Bangle</h3>    
+            <p>I am in the process of making a bangle that will generate enough energy to
+                charge a cell phone through the power of walking. </p>
+        
+            <h3>Arduino Walkie-Talkie</h3>
+            <p>I made this for an engineering module</p>
+        </div>
 
 
         <!-- Contact Page -->
