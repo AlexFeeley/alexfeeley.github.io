@@ -91,8 +91,8 @@ li a:hover {
 /* Creating Two Columns in the About Section */
 .column {
     float: left;
-    width: 40%;
-    margin-left: 5%;
+    width: 45%;
+    margin-left: 2%;
     margin-right: auto;
     word-wrap:break-word;
 }
@@ -102,7 +102,7 @@ li a:hover {
     clear: both;
 }
 
-/* Home Button*/
+/* Learn more About Me Button*/
 button{
     background-color: lightseagreen;
     font-size: 16px;
@@ -256,4 +256,36 @@ hr{
 }
 #icon:hover{
     color:lightseagreen;
+}
+
+/* Optimizing the Website for Smartphones */
+@media screen and (max-width: 480px){
+    h1{
+        font-size: 75%;
+        margin-top: 0%;
+    }
+    h2{
+        line-height: 0.9;
+        font-size: 30px;
+    }
+    p{
+        font-size: 60%;
+    }
+    #alex, ul, li, li a{
+        border-radius: 5px;
+        padding: 3px 3px;
+        font-size: 11px;
+    }
+    button{
+        font-size: 11px;
+    }
+    .homebutton{
+        padding: 3px;
+        margin: 3px;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
 }
