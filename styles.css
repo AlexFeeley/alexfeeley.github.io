@@ -29,7 +29,7 @@ h3, h4, h5, h6, p{
     text-align: center;
 }
 p{
-    word-wrap:break-word;
+    word-wrap: break-word;
 }
 
 /* Table */
@@ -43,54 +43,6 @@ td{
     word-wrap:break-word;
     margin-right: auto;
     margin-left: auto;
-}
-
-/* Navigation Bar */
-ul {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: verdana;
-    font-size: 75%;
-    background-color: #0a192f;
-    width: 100%;
-    z-index: 1000;
-  }
-li {
-    float: right;
-    padding: 4px;
-    z-index: 1000;
-}
-li a {
-    border: 0.5px solid lightseagreen;
-    border-radius: 8px;
-    background-color: lightseagreen;
-    display: block;
-    color: #d9d9e8;
-    text-align: center;
-    padding: 5px 5px;
-    text-decoration: none;
-    z-index: 1000;
-}
-li a:hover {
-    color: #0a192f;
-    z-index: 1000;
-}
-#alex{
-    text-align: left; 
-    color: #d9d9e8; 
-    background-color: lightseagreen; 
-    display: inline-block;
-    border: 0.5px solid lightseagreen;
-
-    border-radius: 8px;
-    padding: 5px 5px;
-    margin-top: 3px;
-    margin-left: 2.5%;
 }
 
 /* Creating Two Columns in the About Section */
@@ -159,23 +111,12 @@ button{
     margin-left:auto;
     margin-right:auto;
 }
-  
 .active, .collapsible:hover {
     background-color: #0a192f;
     width: 90%;
     margin-left:auto;
     margin-right:auto;
 }
-  
-.content {
-    display: none;
-    overflow: hidden;
-    background-color: #0a192f;
-    width: 90%;
-    margin-left:auto;
-    margin-right:auto;
-}
-
 .exp::before{
     content: "\2022";
     color: white;
@@ -248,18 +189,28 @@ div p a{
     text-decoration: none;
     color: lightskyblue;
 }
+
+/* Opening Page */
 .background {
     position: relative; 
-    width:95%;
-    margin: 0 auto;
+    width:98%;
+    margin: 0;
+    padding: 0;
 }
 .background #content {
-    position: absolute;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 720px){
+    #content{
+        width: 90%;
+        margin-top: 4%;
+    }
+}
+
+
 .dogpic{
     width: 100px; 
     height: 150px; 
@@ -277,76 +228,51 @@ hr{
     color:lightseagreen;
 }
 
-/* Optimizing the Website for Smartphones */
-@media screen and (max-width: 600px){
-    h1{
-        font-size: 75%;
-        margin-top: 0%;
-    }
-    h2{
-        line-height: 0.9;
-        font-size: 30px;
-    }
-    h3{
-        font-size: 120%;
-    }
-    p{
-        font-size: 75%;
-    }
-    #alex, ul, li, li a{
-        border-radius: 5px;
-        padding: 3px 3px;
-        font-size: 11px;
-        margin-left: auto; 
-        margin-right: auto;
-    }
-    #alex{
-        border: 2px solid lightseagreen;
-        margin-top: 4px;
-        font-family: verdana;
-    }
-    li a:hover{
-        text-decoration: none;
-        color: #0a192f;
-    }
-    ul{
-        width: 100%;
-    }
-    button{
-        font-size: 11px;
-    }
-    .homebutton{
-        padding: 3px;
-        margin: 3px;
-    }
-    .dogpic{
-        width: 75px;
-        height: 100px;
-        margin-left: 20%;
-    }
-    #one{
-        width: 100px;
-        height: 150px;
-        margin-left: 5%;
-    }
-    .column{
-        width: 100%;
-    }
-    .row:after{
-        display: flex;
-        content: none;
-    }
-    .hoverable:hover{
-        text-decoration: none;
-        color:white;
-    }
-    .collapsible{
-        font-size: 85%;
-        padding: 10px;
-    }
-}
+/* Navigation Bar */
 @media (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;
+    }
+}
+.topnav {
+    overflow: hidden;
+    background-color: #0a192f;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+  }
+.topnav a {
+    /* background-color: lightseagreen; */
+    float: left;
+    display: block;
+    color: #d9d9e8;
+    text-align: center;
+    padding: 5px 5px;
+    margin: 2px;
+    border-radius: 8px;
+    text-decoration: none;
+}  
+.topnav a:hover {
+    background-color: lightseagreen;
+} 
+.topnav .icon {
+    display: none;
+} 
+@media screen and (max-width: 720px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
     }
 }

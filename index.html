@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="Alex Feeley, a rising Sophomore at Vanderbilt University
         seeking a technical internship for the Summer of 2020">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
         <meta name="keywords" content="Alex Feeley, Alex, Feeley, alex feeley, electrical engineer, 
         ee, computer science, vanderbilt" data-react-helmet="true">
         <meta name="author" content="Alex Feeley">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
         <link rel="icon" type="image/png" href="/bitmoji.jpeg" sizes="16x16">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- These icons were taken from the open source project, Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
         <title>Alex Feeley</title>
-
-
-    <style>
-    </style>
     </head>
     
     <body>
         <!-- Navigation Bar -->
-        <ul class="navbar">
-                <h3 id="alex">Alex Feeley</h3>
-                <li style="display: inline-block; margin-right: 2.5%"><a href="#contact">Connect</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#about">About</a></li>
-        </ul>
+        <div class="topnav" id="myTopnav">
+            <a style="font-family: verdana; color: #d9d9e8">Alex Feeley</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Connect</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+          
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+        </script>
 
         <!-- Home Page -->
         <div class="background">
@@ -48,7 +58,7 @@
                 <h2>Alex Feeley.</h2>
                 <p style="word-wrap: none; width: 100%">I'm a Sophomore at Vanderbilt University majoring in <strong>Electrical Engineering</strong>
                     with a passion for creating cool stuff.</p>
-                <!-- <br></br> -->
+
                 <div style="text-align: center">
                     <button class="homebutton">
                         <a href="#about" style="color:white; text-decoration: none">Learn more about me</a>
@@ -74,9 +84,6 @@
                     or to experiment with new kinds of technology. In my free time, I explore the restaurants of Nashville, 
                     teach children's swim lessons, and foster dogs through Nashville Humane's 
                     <a class="highlight" href="http://nashvillehumane.org/doggie-dates/" target="_blank"> Rovernight program. </a></p>
-                <p id="two">Look at Monkey (left) and Buddy (right)!</p>
-                <img src="IMG_7552.jpg" alt="Monkey" class="dogpic">    
-                <img src="IMG_1223.png" alt="Buddy" class="dogpic">
             </div>
         </div>
 
@@ -247,5 +254,10 @@
         <!-- Footer -->
         <hr></hr>
         <p>Designed and built by <a id="icon" href="#about">Alex Feeley</a></p>
+
+        <!-- Bootstrap Javascript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
