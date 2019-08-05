@@ -33,6 +33,21 @@ h3, h4, h5, h6, p{
 p{
     word-wrap: break-word;
 }
+@media screen and (max-width: 330px){
+    h1{
+        font-size: 80%;
+        margin-top: 20%;
+    }
+    h2{
+        font-size: 150%;
+        line-height: 10%;
+    }
+    p{
+        font-size: 80%;
+    }
+}
+@media screen and (max-wdth)
+
 
 /* Table */
 td, th{
@@ -42,9 +57,19 @@ td, th{
 }
 td{
     width: 25%;
-    word-wrap:break-word;
-    margin-right: auto;
-    margin-left: auto;
+    word-wrap: break-word;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+@media screen and (max-width: 860px){
+    td,th{
+        padding: 2px;
+    }
+    td{
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
 }
 
 /* Creating Two Columns in the About Section */
@@ -162,12 +187,14 @@ button{
     margin: 2px;
     border-radius: 8px;
     text-decoration: none;
+    font-family: verdana;
 }  
 .topnav a:hover {
     color: lightseagreen;
 } 
 .topnav .icon {
     display: none;
+    color: #d9d9e8;
 } 
 @media screen and (max-width: 720px) {
     .topnav a:not(:first-child) {
