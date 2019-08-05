@@ -69,7 +69,7 @@
 
         <!-- About Page -->
         <p id="about"></p>
-        <br></br>
+        <p></p>
 
         <h2>About</h2>
         <hr></hr>
@@ -96,7 +96,7 @@
 
         <!-- Education Page -->
         <p id="education"></p>
-        <br></br>
+        <p></p>
     
         <h2>Education</h2>
         <hr></hr>
@@ -129,7 +129,7 @@
 
         <!-- Experience Page -->
         <p id="experience"></p>
-        <br></br>
+        <p></p>
 
         <h2>Experience</h2>
         <hr>
@@ -183,25 +183,25 @@
 
         <!-- Collapsible Sections -->
         <script>
-                var coll = document.getElementsByClassName("collapsible");
-                var i;
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
                                                             
-                for (i = 0; i < coll.length; i++) {
-                    coll[i].addEventListener("click", function() {
-                        this.classList.toggle("active");
-                        var content = this.nextElementSibling;
-                        if (content.style.display === "block") {
-                            content.style.display = "none";
-                        } else {
-                            content.style.display = "block";
-                        }
-                    });
-                }
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
         </script>
 
         <!-- Projects Page -->
         <p id="projects"></p>
-        <br></br>
+        <p></p>
 
         <h2>Projects</h2>
         <hr></hr>
@@ -223,7 +223,7 @@
 
         <!-- Contact Page -->
         <p id="contact"></p>
-        <br></br>
+        <p></p>
 
         <h2 class="title">Connect with Me</h2>
         <hr></hr>
@@ -247,8 +247,8 @@
         </div>
     
         <p>Get in touch with me by pressing an icon to connect with me</p>
-        <p> on <a id="icon" href="https://github.com/AlexFeeley" target="_blank">LinkedIn,
-        </a> view my <a id="icon" href="https://www.linkedin.com/in/alex-feeley/" target="_blank">Github,</a>
+        <p> on <a id="icon" href="https://www.linkedin.com/in/alex-feeley/"target="_blank">LinkedIn,
+        </a> view my <a id="icon" href="https://github.com/AlexFeeley"  target="_blank">Github,</a>
         or shoot me an <a id="icon" href="mailto:alexandra.feeley.lamb@vanderbilt.edu" rel="noopener">Email.</a></p>
 
         <!-- Footer -->
