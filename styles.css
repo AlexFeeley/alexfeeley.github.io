@@ -33,21 +33,45 @@ h3, h4, h5, h6, p{
 p{
     word-wrap: break-word;
 }
-@media screen and (max-width: 330px){
-    h1{
-        font-size: 80%;
-        margin-top: 20%;
+@media screen and (max-width: 480px){
+    .title{
+        font-size: 100%;
+        margin-top: 5%;
+        line-height: 50%;
     }
     h2{
-        font-size: 150%;
-        line-height: 10%;
+        font-size: 180%;
+        line-height: 80%;
+    }
+    p{
+        font-size: 100%;
+    }
+    #content{
+        width: 90%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 400px){
+    .title{
+        font-size: 80%;
+        margin-top: 7%;
+    }
+    h2{
+        font-size: 160%;
     }
     p{
         font-size: 80%;
     }
+    #content{
+        width: 80%;
+    }
 }
-@media screen and (max-wdth)
-
+/* @media screen and (max-width: 340px){
+    .title{
+        font-size: 70%;
+        margin
+    }
+} */
 
 /* Table */
 td, th{
@@ -66,7 +90,7 @@ td{
         padding: 2px;
     }
     td{
-        width: 80%;
+        width: 100%;
         margin-right: 10%;
         margin-left: 10%;
     }
@@ -84,6 +108,36 @@ td{
     content: "";
     display: table;
     clear: both;
+}
+@media screen and (max-width: 600px){
+    .column{
+        float: none;
+        width: 90%;
+        margin-left: 5%;
+        word-wrap: break-word;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .row:after{
+        display: none;
+        clear: none;
+    }
+}
+
+/* Picture of Me in About Section */
+#me{
+    width: 200px; 
+    height: 300px; 
+    border-radius: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+@media screen and (max-width: 600px){
+    #me{
+        width: 40%;
+        height: auto;
+    }
 }
 
 /* Learn more About Me Button*/
@@ -122,6 +176,32 @@ button{
 .homebutton:hover a:after {
     opacity: 1;
     right: 0;
+}
+@media screen and (max-width: 480px){
+    button{
+        font-size: 80%;
+    }
+    .homebutton{
+        padding: 5px;
+        margin: 0%;
+    }
+}
+@media screen and (max-width: 400px){
+    button{
+        font-size: 70%;
+    }
+    .homebutton{
+        padding: 3px;
+    }
+}
+@media screen and (max-width: 340px){
+    button{
+        font-size: 60%;
+    }
+    }
+    .homebutton{
+        padding: 2px;
+    }
 }
 
 /* Collapsible Sections */
@@ -177,7 +257,7 @@ button{
     position: fixed;
     z-index: 1000;
     width: 100%;
-  }
+}
 .topnav a {
     float: left;
     display: block;
@@ -240,7 +320,6 @@ button{
 }
 
 
-
 .proj{
     word-wrap: break-word;
     margin-left: 5%;
@@ -263,16 +342,9 @@ button{
     display: inline-block;
     margin: 2%;
 }
-#one, #two{
+#me, #two{
     display: inline-block;
     margin: 2%;
-}
-#one{
-    width: 200px; 
-    height: 300px; 
-    border-radius: 10%;
-    margin-left: 50%;
-    margin-top: 0;
 }
 #two{
     word-wrap:break-word;
