@@ -34,6 +34,9 @@ h3, h4, h5, h6, p{
 p{
     word-wrap: break-word;
 }
+div{
+    -webkit-overflow-scrolling: touch;
+}
 @media screen and (max-width: 480px){
     .title{
         font-size: 100%;
