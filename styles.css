@@ -92,7 +92,7 @@ li a:hover {
 .column {
     float: left;
     width: 40%;
-    margin-left: 5%;
+    margin-left: auto;
     margin-right: auto;
     word-wrap:break-word;
 }
@@ -143,7 +143,7 @@ button{
 /* Collapsible Sections */
 .collapsible {
     background-color: #0a192f;
-    color: lightskyblue;
+    color: #d9d9e8;
     cursor: pointer;
     padding: 18px;
     width: 90%;
@@ -174,7 +174,7 @@ button{
 /* Hover to Change Text */
 .hoverable {
     cursor:default;
-    color:lightskyblue;
+    color:#d9d9e8;
     text-decoration:none;
 }
 .hoverable .hover {
