@@ -21,8 +21,8 @@ h1 {
     text-align: center;
 }
 h2{
-    /* color: lightseagreen; */
-    color: white;
+    color: #c8a2c8;
+    /* color: white; */
     font-family: verdana;
     font-size: 250%;
     text-align: center;
@@ -49,4 +49,20 @@ p{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* Front Page Button */
+.ghost-button {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+.ghost-button:hover, .ghost-button:active {
+  color: #c8a2c8;
+  text-decoration: none;
 }
