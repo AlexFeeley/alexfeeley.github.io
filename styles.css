@@ -16,7 +16,7 @@ html,body {
 h1 {
     color: white;
     font-family: "Poppins", sans-serif;
-    font-size: 100%;
+    /* font-size: 100%; */
     text-align: center;
 }
 h2{
@@ -39,7 +39,7 @@ p{
 #vantajs {
     width: 100%; 
     height: 100vh;
-    position: fixed;
+    position: absolute;
     background-size: cover;
 }
 #content{
@@ -56,7 +56,7 @@ p{
     border-radius: 50px;
     transition: 0.5s;
 }
-#content .landing-button:hover {
+#content .landing-button:hover, .landing-button:active {
     background: #c8a2c8;
     border: 1.5px solid #c8a2c8;
     color: #350052;
@@ -74,8 +74,8 @@ p{
     flex-direction: column;
     text-align: center;
 }  
-#content h1 {
-    font-size: 36px;
+#content p {
+    font-size: 24px;
     color: white;
 }
 #content h2 {
@@ -94,6 +94,8 @@ p{
 }
 #header #name h1 {
     float: left;
+    padding: 0 8px 8px 8px;
+    font-size: 16px;
 }
 
 /* Navigation Bar */
@@ -124,14 +126,22 @@ p{
 
 /* Scroll Bar */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 6px;
 }
 ::-webkit-scrollbar-track {
     background: #282828;
 }  
 ::-webkit-scrollbar-thumb {
     background: #c8a2c8;
+    border-radius: 6px;
+    height: 10px;
 } 
 ::-webkit-scrollbar-thumb:hover {
     background: #947b94;
+}
+
+/* About Section */
+#about {
+    background-color: #525252;
+    background-size: cover;
 }
