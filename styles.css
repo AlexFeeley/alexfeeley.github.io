@@ -5,30 +5,28 @@ html {
     overflow-x: hidden; 
     overflow-y: scroll;
 }
-/* body {
-    background-color: #0a192f;
-} */
+body {
+    background-color: #282828;
+}
 html,body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
 h1 {
-    /* color:  #d9d9e8; */
     color: white;
-    font-family: verdana;
+    font-family: "Poppins", sans-serif;
     font-size: 100%;
     text-align: center;
 }
 h2{
     color: #c8a2c8;
-    /* color: white; */
-    font-family: verdana;
+    font-family: "Poppins", sans-serif;
     font-size: 250%;
     text-align: center;
 }
 h3, h4, h5, h6, p{
-    /* color: #d9d9e8; */
+    font-family: "Poppins", sans-serif;
     font-family: verdana;
     text-align: center;
 }
@@ -37,32 +35,103 @@ p{
     color: white;
 } 
 
-/* Front Page Settings */
+/* Landing Page */
 #vantajs {
     width: 100%; 
-    height: 100%;
+    height: 100vh;
     position: fixed;
-    z-index: -100;
+    background-size: cover;
 }
-#content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#content{
+    height: 100vh;
 }
 
-/* Front Page Button */
-.ghost-button {
+/* Landing Page Button */
+#content .landing-button {
     display: inline-block;
     width: 200px;
     padding: 8px;
     color: white;
-    border: 1px solid white;
-    text-align: center;
+    border: 1.5px solid white;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+#content .landing-button:hover {
+    background: #c8a2c8;
+    border: 1.5px solid #c8a2c8;
+    color: #350052;
     text-decoration: none;
-    border-radius: 5px;
-  }
-.ghost-button:hover, .ghost-button:active {
-  color: #c8a2c8;
-  text-decoration: none;
+}
+#content .content-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}  
+#content h1 {
+    font-size: 36px;
+    color: white;
+}
+#content h2 {
+    font-size: 48px;
+}
+
+/* Header */
+#header {
+    padding: 10px 0;
+    height: 92px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 997;
+}
+#header #name h1 {
+    float: left;
+}
+
+/* Navigation Bar */
+.nav-menu {
+    list-style: none;
+}
+.nav-menu ul {
+    position: absolute;
+    z-index: 50;
+}
+.nav-menu li {
+    position: relative;
+    float: left;
+}
+#nav-menu-container {
+    float: right;
+}
+.nav-menu a {
+    padding: 0 8px 8px 8px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+.nav-menu a:hover {
+    content: "";
+    border-bottom: solid 1.5px #c8a2c8;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #282828;
+}  
+::-webkit-scrollbar-thumb {
+    background: #c8a2c8;
+} 
+::-webkit-scrollbar-thumb:hover {
+    background: #947b94;
 }
