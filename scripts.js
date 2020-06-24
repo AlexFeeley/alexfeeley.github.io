@@ -14,13 +14,3 @@ VANTA.BIRDS({
     separation: 15,
     cohesion: 50
 });
-
-// Navigation Bar
-function navBar() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-}

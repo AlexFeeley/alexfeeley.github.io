@@ -85,8 +85,7 @@ p{
 /* Header */
 #header {
     background-color: #282828;
-    padding: 10px 0;
-    height: 6%;
+    height: 55px;
     position: fixed;
     left: 0;
     top: 0;
@@ -100,6 +99,11 @@ p{
 }
 
 /* Navigation Bar */
+/* #bitmoji {
+    width: 5%;
+    height: 5%;
+    margin-top: 0px;
+} */
 .nav-menu {
     list-style: none;
 }
@@ -110,9 +114,6 @@ p{
 .nav-menu li {
     position: relative;
     float: left;
-}
-#nav-menu-container {
-    float: right;
 }
 .nav-menu a {
     padding: 0 8px 8px 8px;
@@ -144,39 +145,20 @@ p{
 /* About Section */
 #about, #experience, #contact {
     background-color: #525252;
-    background-size: 100% 100%;
     color: white; 
+    height: 100vh;
+}
+#education, #projects {
+    color: white; 
+    height: 100vh;
 }
 #headshot {
     display: inline-block;
 }
 
 /* TESTING */
-  .nav-menu .icon {
-    display: none;
-  }
-  
-  @media screen and (max-width: 780px) {
-    .nav-menu a { display: none; }
-    .nav-menu a.icon {
-      float: right;
-      display: block;
-    }
-    .nav-menu.responsive {position: relative;}
-    .nav-menu.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .nav-menu.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
-
   #about .background {
-    background: url('amsterdam.JPG');
-    max-width: 50%;
-    height: auto;
+    background: url('amsterdam.JPG') center top no-repeat;
+    max-width: auto;
+    max-height: 75vh;
   }
