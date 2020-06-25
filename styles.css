@@ -99,11 +99,9 @@ p{
 }
 
 /* Navigation Bar */
-/* #bitmoji {
-    width: 5%;
-    height: 5%;
-    margin-top: 0px;
-} */
+.nav-header {
+    background-color: #282828;
+}
 .nav-menu {
     list-style: none;
 }
@@ -124,6 +122,11 @@ p{
 .nav-menu a:hover {
     content: "";
     border-bottom: solid 1.5px #c8a2c8;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
 }
 
 /* Scroll Bar */
