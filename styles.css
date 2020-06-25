@@ -31,6 +31,7 @@ h3, h4, h5, h6, p{
     text-align: center;
 }
 p{
+    text-align: left;
     word-wrap: break-word;
     color: white;
 } 
@@ -156,12 +157,7 @@ p{
     height: 100vh;
 }
 #headshot {
-    display: inline-block;
+    display: block;
+    margin: auto;
+    height: 80vh;
 }
-
-/* TESTING */
-  #about .background {
-    background: url('amsterdam.JPG') center top no-repeat;
-    max-width: auto;
-    max-height: 75vh;
-  }
