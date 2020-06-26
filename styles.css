@@ -29,6 +29,7 @@ h3, h4, h5, h6, p{
     font-family: "Poppins", sans-serif;
     font-family: verdana;
     text-align: center;
+    color: white;
 }
 p{
     text-align: left;
@@ -150,14 +151,20 @@ p{
 #about, #experience, #contact {
     background-color: #525252;
     color: white; 
-    height: 100vh;
+    min-height: 100vh;
 }
 #education, #projects {
     color: white; 
-    height: 100vh;
+    min-height: 100vh;
 }
 #headshot {
     display: block;
     margin: auto;
-    height: 80vh;
+    height: 50vh;
 }
+
+/* TESTING */
+/* .row:before, .row:after {width:0px; height:0px;} */
+.row:before, .row:after {
+    display: flex !important;
+    }
