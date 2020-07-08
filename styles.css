@@ -18,21 +18,20 @@ h1 {
     font-family: "Poppins", sans-serif;
     text-align: center;
 }
-h2{
+h2 {
     color: #c8a2c8;
     font-family: "Poppins", sans-serif;
     font-size: 250%;
     text-align: center;
 }
-h3, h4, h5, h6, p{
+h3, h4, h5, h6, p, a {
     font-family: "Poppins", sans-serif;
     text-align: center;
     color: white;
 }
-p{
+p {
     text-align: left;
     word-wrap: break-word;
-    color: white;
 } 
 
 /* Landing Page */
@@ -50,7 +49,7 @@ p{
 }
 
 /* Landing Page Button */
-#content .landing-button {
+.landing-button {
     display: inline-block;
     width: 200px;
     padding: 8px;
@@ -59,7 +58,7 @@ p{
     border-radius: 50px;
     transition: 0.5s;
 }
-#content .landing-button:hover, .landing-button:active {
+.landing-button:hover, .landing-button:active {
     background: #c8a2c8;
     border: 1.5px solid #c8a2c8;
     color: #350052;
@@ -166,54 +165,32 @@ p{
     text-align: center;
 }
 
-/* Other Sections */
-#projects {
-    color: white; 
-    min-height: 100vh;
-}
-#experience, #contact {
+/* Experience Section */
+#experience {
     background-color: #525252;
     color: white; 
     min-height: 100vh;
 }
 
-/* TESTING */
-/* .education-accordion {
-    max-width: 500px;
-} */
-   
-  .education-accordion .card,
-  .education-accordion .card:last-child .card-header {
-    border: none;
-    border: none;
-    box-shadow: none;
-    background: transparent;
-  }
-   
-  .education-accordion .card-header {
-    border-bottom-color: #EDEFF0;
-  }
-   
-  .education-accordion .fa-stack {
-    font-family: "Poppins", sans-serif;
-    /* font-size: 18px; */
-    color: #947b94;
-  }
-   
-  .education-accordion .btn {
-    width: 100%;
-    color: white;
-  }
-   
-  .education-accordion .btn-link:hover,
-  .education-accordion .btn-link:focus {
+/* Project Section */
+#projects {
+    color: white; 
+    min-height: 100vh;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #525252;
+    color: white; 
+    min-height: 100vh;
+}
+.icon {
+    font-size: 100px;
+    display: inline-block;
+    margin: 2%;
+    color:white;
     text-decoration: none;
-    outline: none;
-    box-shadow: none;
-  }
- .education-accordion p {
-     margin: 0; 
- }
- .myaccordion li + li {
-    margin-top: 10px;
-  }
+}
+.icon:hover {
+    color: #c8a2c8;
+}
