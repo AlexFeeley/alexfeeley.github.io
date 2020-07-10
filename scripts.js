@@ -3,8 +3,8 @@ VANTA.BIRDS({
     el: "#vantajs",
     mouseControls: true,
     touchControls: true,
-    scale: 1.00,
-    scaleMobile: 1.00,
+    scale: 1.00, // Take this out?
+    scaleMobile: 1.00, // How's this look on phones without it?
     backgroundColor: 0x282828,
     color1: 0x350052,
     color2: 0x123c69,
@@ -13,12 +13,4 @@ VANTA.BIRDS({
     quantity: 3,
     separation: 15,
     cohesion: 50
-});
-
-// 
-$("#accordion").on("hide.bs.collapse show.bs.collapse", e => {
-  $(e.target)
-    .prev()
-    .find("i:last-child")
-    .toggleClass("fa-minus fa-plus");
 });
