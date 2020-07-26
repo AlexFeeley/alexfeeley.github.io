@@ -194,3 +194,30 @@ p {
 .icon:hover {
     color: #c8a2c8;
 }
+
+/* Collapsible Sections */
+#education .collapsible {
+    background-color: #282828;
+}
+#experience .collapsible {
+    background-color: #565656;
+}
+.collapsible {
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: center;
+}
+.collapsible:focus,
+.collapsible:active {
+      outline: none;
+      box-shadow: none;
+}
+.active, .collapsible:hover {
+   color: #c8a2c8;
+}
+.content {
+    display: none;
+    overflow: hidden;
+}
